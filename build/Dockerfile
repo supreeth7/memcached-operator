@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
+FROM quay.io/app-sre/boilerplate:image-v2.2.0 AS builder
 
 ENV OPERATOR=/usr/local/bin/memcached-operator-0.17 \
     USER_UID=1001 \
